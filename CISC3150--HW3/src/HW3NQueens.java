@@ -38,7 +38,7 @@ public class HW3NQueens{
 		int[] queen= new int[n]; 
 		int solutions=0; //counter of solutions
 		
-		//put queen in each row and check if they are safe.
+		//put queens in each row and check if they are safe.
 		int row = 0;
 		queen[row]= -1;
 		while (row>=0) {
@@ -76,8 +76,8 @@ public class HW3NQueens{
 	}
 	
 	//if the new add queen[a] is the same/+1/-1 column as the last one, queen[a-1]
-	//	 or same/+2/-2 as the one before last one, queen[a-2] ...... 
-	//   that will make a threaten.
+	//	or same/+2/-2 as the one before last one, queen[a-2] ...... 
+	//	that will make a threaten.
 	//else it is safe to put there.
 	static boolean noThreaten(int[] q, int a){
 		for(int i=1; i<=a; i++){
