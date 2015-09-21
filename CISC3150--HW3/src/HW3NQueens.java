@@ -75,8 +75,8 @@ public class HW3NQueens{
 		System.out.println("There are "+solutions+ " solutions.");
 	}
 	
-	//if the new add queen[a] is the same/+1/-1 column as the last one, queen[a-1]
-	//	or same/+2/-2 as the one before last one, queen[a-2] ...... 
+	//if the new add queen[a] is the same/+1/-1 column as the last one, queen[a-1],
+	//	or same/+2/-2 as the one before last one, queen[a-2], ...... 
 	//	that will make a threaten.
 	//else it is safe to put there.
 	static boolean noThreaten(int[] q, int a){
